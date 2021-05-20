@@ -1,4 +1,4 @@
-# face_mask_classifier
+# face mask classifier
 
 
 ### Repository information:
