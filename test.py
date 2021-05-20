@@ -29,40 +29,6 @@ def main():
     model = load_model('./mask_status.h5')
     cascade_classifier = cv2.CascadeClassifier('./cascade_classifier/haarcascade_frontalface_alt2.xml')
 
-    '''cap = cv2.VideoCapture(0)
-
-    while True:
-        ret, frame = cap.read()
-        face_coords = get_faces_coords(frame, classifier=cascade_classifier)
-        for face in face_coords:
-            x, y, w, h = face
-            roi = frame[y:y+h, x:x+w] / 255.0
-            cv2.imshow('roi', roi)
-            prediction = get_prediction(face=roi, model=model)
-            print(np.argmax(prediction))
-            prediction = classes[np.argmax(prediction)]
-            print(prediction)
-
-            if prediction == 'with_mask':
-                color = (0, 255, 0)
-            elif prediction == 'mask_weared_incorrect':
-                color = (0, 165, 255)
-            else:
-                color = (0, 0, 255)
-
-            cv2.rectangle(frame, pt1=(x, y), pt2=(x + w, y + h), color=color, thickness=2)
-            cv2.putText(img=frame, text=prediction, org=(x, y), fontFace=cv2.FONT_HERSHEY_SIMPLEX, fontScale=1,
-                        color=color, thickness=2)
-
-        cv2.imshow('webcam', frame)
-
-        if cv2.waitKey(1) & 0xFF == ord('q'):
-            break
-
-    cap.release()
-    cv2.destroyAllWindows()'''
-
-
     for img in os.listdir('./Test/'):
         img_path = './Test/' + img
         img = cv2.imread(img_path)
