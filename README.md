@@ -13,7 +13,7 @@ To begin, below is an image of some random set of images extracted from the data
 
 #### Note: 
 
-Images appearing in the figure below have not defects, simply color correctionhad to applied for it to be visualized properly using matplotlib. I havent done the color mapping correction due to the fact that it is being used here for display purposes.
+Images appearing in the figure below do not have any defects, simply color correction had to applied for it to be visualized properly using matplotlib. I havent done the color mapping correction due to the fact that it is being used here for display purposes and wont affect the dataset.
 
 
 ![Figure_1](https://user-images.githubusercontent.com/54745383/118973155-0b336b80-b97a-11eb-9e76-d84b8afd5236.png)
